@@ -93,6 +93,21 @@ impl Location {
             population: 0,
         }
     }
+    fn prarie() -> Self {
+        Self {
+            biome: Biome::Prarie,
+            capacity: 8,
+            frogs: 0,
+            lizards: 0,
+            mice: 0,
+            birds: 0,
+            frog_chance: 0.,
+            lizard_chance: 0.0,
+            mice_chance: 0.0,
+            bird_chance: 0.0,
+            population: 0,
+        }
+    }
 
     fn spawn_enemies(&mut self) {
         match &self.biome {
